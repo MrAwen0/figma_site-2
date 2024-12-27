@@ -110,6 +110,10 @@
         font-size: 0.9rem;
     }
 
+    .menu__list {
+        gap: 20px;
+    }
+
     .menu__btn {
         border-radius: 30px;
         padding: 8px 29px;
