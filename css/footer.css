@@ -1,0 +1,23 @@
+.footer{
+    background: var(--color-black);
+    padding-top: 57px;
+    padding-bottom: 14px;
+    color: var(--color-white);
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer__text{
+    padding: 20px 0;
+}
+
+.footer__list{
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+

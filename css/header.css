@@ -1,0 +1,123 @@
+.header {
+    min-height: 90vh;
+}
+.header__top {
+    display: flex;
+    padding-top: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__top-logo {
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 0;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+.menu__list-item {
+}
+.menu__link {
+}
+.menu__btn {
+    border-radius: 30px;
+    padding: 15px 58px;
+    background: var(--color-black);
+    color: var(--color-milk);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header__content {
+}
+
+.header__content-images {
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-item{
+    display: none;
+}
+
+.content-item.content-item__active{
+    display: inline-block;
+}
+
+.header__content-images::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
+    z-index: -2;
+}
+
+.header__content-images:has(.color--blue.content-item__active)::before{
+    background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
+}
+.header__content-images:has(.color--black.content-item__active)::before{
+    background: linear-gradient(180deg, #b6b6b6 0%, rgba(235, 235, 235, 0) 100%);
+}
+.header__content-images:has(.color--red.content-item__active)::before{
+    background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
+}
+.header__content-images:has(.color--green.content-item__active)::before{
+    background: linear-gradient(180deg, #ddead9 0%, rgba(235, 235, 235, 0) 100%);
+}
+.header__content-images:has(.color--white.content-item__active)::before{
+    background: linear-gradient(180deg, #fafafa 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+
+
+@media (max-width: 1250px){
+    .header__content-images img{
+        max-width: 100%;
+    }
+
+    .header{
+        min-height: 80vh;
+    }
+   
+}
+
+@media (max-width: 850px){
+    .header{
+        min-height: 65vh;
+    }
+
+    .header__top{
+        padding-top: 25px;
+    }
+   
+}
+
+@media (max-width: 560px){
+    .header{
+        min-height: 45vh;
+    }
+
+    .header__menu-list {
+        gap: 20px;
+        font-size: 0.9rem;
+    }
+
+    .menu__btn {
+        border-radius: 30px;
+        padding: 8px 29px;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 414px){
+
+}
